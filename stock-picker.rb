@@ -1,11 +1,15 @@
 # function stock_picker takes one argument: stock_prices (array)
-    # loop through stock_prices
-    # excluding the last element:
-        # save index of the lowest number as buying price
-    # loop through stock_prices
-    # excluding elements before buying price index
-        # save index of highest number as selling price
-    # return lowest number and highest number as array
+    # create variable to save highest_profit,
+    # and index of selling price and buying price
+    # loop through stock_prices excluding the last element
+    # (buying price):
+        # loop through stock_prices excluding elements
+        # before parent loop's current index (selling price):
+            # check if selling price - buying price is
+            # greater than current highest profit
+                # save index of selling price and buying price
+        
+    # return index of selling price and buying price as array
 
 def stock_picker(stock_prices)
     lowest_price = nil
